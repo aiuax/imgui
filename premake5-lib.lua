@@ -1,34 +1,28 @@
-project 'imgui'
+project 'imgui-lib'
     kind 'StaticLib'
     language 'C++'
-    cppdialect 'C++14'
+    targetdir 'build/bin/%{cfg.buildcfg}'
 
-    targetdir 'bin/%{cfg.buildcfg}'
-
-    vpaths
-    {
-        ['headers'] = '**.h',
-        ['source'] = '**.cpp'
+    includedependencies {
     }
 
-    files
-    {
+    usedependencies {
+    }
+
+    includedirs {
+        '.',
+        'examples'
+    }
+
+    files {
         '*.h',
         '*.cpp'
     }
 
     filter 'system:windows'
-        files
-        {
+        files {
             'examples/imgui_impl_win32.h',
             'examples/imgui_impl_dx11.h',
             'examples/imgui_impl_win32.cpp',
             'examples/imgui_impl_dx11.cpp'
         }
-
-    includedirs
-    {
-        '.',
-        'examples'
-    }
-

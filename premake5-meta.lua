@@ -1,7 +1,7 @@
 return {
     includedirs = { '.', 'examples' },
-    links = { 'imgui' },
+    links = { 'imgui-lib' },
     options = {
     },
-    premake = 'premake5-package.lua'
+    premake = 'premake5-lib.lua'
 }
