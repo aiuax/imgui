@@ -26,6 +26,7 @@ workspace 'imgui'
 
     filter { 'action:vs2017', 'system:windows' }
         buildoptions { '/permissive-' }
+        disablewarnings { "5054" }
 
     filter { 'configurations:Debug' }
         defines { '_DEBUG' }
