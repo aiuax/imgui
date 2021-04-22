@@ -11,7 +11,7 @@ project 'imgui-lib'
 
     includedirs {
         '.',
-        'examples'
+        'backends'
     }
 
     files {
@@ -21,8 +21,8 @@ project 'imgui-lib'
 
     filter 'system:windows'
         files {
-            'examples/imgui_impl_win32.h',
-            'examples/imgui_impl_dx11.h',
-            'examples/imgui_impl_win32.cpp',
-            'examples/imgui_impl_dx11.cpp'
+            'backends/imgui_impl_win32.h',
+            'backends/imgui_impl_dx11.h',
+            'backends/imgui_impl_win32.cpp',
+            'backends/imgui_impl_dx11.cpp'
         }
