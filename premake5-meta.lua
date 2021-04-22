@@ -1,5 +1,5 @@
 return {
-    includedirs = { '.', 'examples' },
+    includedirs = { '.', 'backends' },
     links = { 'imgui-lib' },
     options = {
     },
